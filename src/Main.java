@@ -11,10 +11,11 @@ public class Main {
 
         ArrayList<String> slova = new ArrayList<>();
 
+        String s = "";
 
-
-        while (in.next()!="Quit") {
-           String s = in.next();
+        while (in.hasNext()) {
+            s = in.next();
+            if (s.equals("Quit")){break;}
             slova.add(s);
 
         }
