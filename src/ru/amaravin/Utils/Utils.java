@@ -1,5 +1,7 @@
 package ru.amaravin.Utils;
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Utils {
@@ -8,9 +10,9 @@ public class Utils {
 
 
 
-    //Метод для вввода слов с консоли
+    //Метод для вввода слов с консоли ArrayList
 
-   public static ArrayList<String> fillArrayWithWords(ArrayList<String> words){
+   public static List<String> fillArrayWithWords(List<String> words  ){
 
         String s = "";
         while (in.hasNext()) {
@@ -21,9 +23,13 @@ public class Utils {
         return words;
     }
 
+    //Метод для ввода слов с ноксоли LinkedList
+
+  //  public static LinkedList<String> fillArrayWithWordsL
+
     //Метод для вывода слов на консоль
 
-    public static void printArray(ArrayList<String> words){
+    public static void printArray(List<String> words){
 
         int size = words.size();
         for (int x = 0; x < size; x++) {
