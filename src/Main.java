@@ -16,7 +16,7 @@ public class Main {
         while (in.hasNext()) {
             s = in.next();
             if (s.equals("Quit")){break;}
-            slova.add(s);
+            slova.add(s.substring(0,1).toUpperCase() + s.substring(1).toLowerCase());
 
         }
 
