@@ -1,6 +1,9 @@
 package ru.amaravin;
 
-import ru.amaravin.Utils.Utils;
+import java.util.ArrayList;
+
+import static ru.amaravin.Utils.Utils.fillArrayWithWords;
+import static ru.amaravin.Utils.Utils.printArray;
 
 
 public class Main {
@@ -8,10 +11,10 @@ public class Main {
 
     public static void main(String[] args) {
 
+        ArrayList<String> words = new ArrayList<>();
 
-            Utils vvod = new Utils();
-            vvod.vvodSlov();
-            vvod.vivodSlov();
+            fillArrayWithWords(words);
+            printArray(words);
 
 
 
